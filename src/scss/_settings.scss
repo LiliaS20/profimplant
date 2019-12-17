@@ -1,12 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic-ext');
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('./files/fonts/Gilroy-Regular.eot');
+  src: url('./files/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/Gilroy-Regular.woff') format('woff'),
+  url('./files/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-$def-color: #363B6A;
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('./files/fonts/Gilroy-Medium.eot');
+  src: url('./files/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/Gilroy-Medium.woff') format('woff'),
+  url('./files/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url('./files/fonts/Gilroy-SemiBold.eot');
+  src: url('./files/fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/Gilroy-SemiBold.woff') format('woff'),
+  url('./files/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic-ext');
+
+$def-color: #74ad76;
+$vio-color: #4c3059;
+$black-color: #303030;
 
 *{
   box-sizing: border-box;
-  color: $def-color;
+  color: $black-color;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy-Regular';
 }
 
 body{
@@ -52,7 +85,7 @@ h1, h2, h3, h4, h5, h6{
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: $def-color;
+  //color: $def-color;
   text-decoration: none;
 }
 
