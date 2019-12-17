@@ -28,12 +28,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('./files/fonts/Gilroy-Bold.eot');
+  src: url('./files/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./files/fonts/Gilroy-Bold.woff') format('woff'),
+  url('./files/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 //@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic-ext');
 
 $def-color: #74ad76;
 $vio-color: #4c3059;
 $black-color: #303030;
+$tvio-color: #201128;
+
 
 *{
   box-sizing: border-box;
@@ -67,11 +79,13 @@ footer, header{
 
 ul{
   margin: 0;
+  padding: 0;
 }
 
 li{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img, svg{
@@ -87,6 +101,8 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1;
   //color: $def-color;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: Gilroy-SemiBold;
 }
 
 p, span, a{

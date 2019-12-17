@@ -1,0 +1,186 @@
+.main {
+
+  .servises {
+    background: $def-color;
+    padding: 60px 0;
+    
+    h2 {
+      color: #fff;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &_card {
+      height: 254px;
+      width: 300px;
+      padding: 30px;
+      border: 2px solid #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+
+      .block {
+
+        svg {
+          max-width: 90px;
+          max-height: 90px;
+          margin: 0 auto 45px;
+
+          &:hover {
+            color: red;
+            fill: red;
+          }
+        }
+
+        .text {
+          font-size: 22px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-family: Gilroy-Medium;
+          text-align: center;
+        }
+      }
+    }
+
+    &_card:hover {
+      background: #fff;
+      border: 2px solid $vio-color;
+
+      .block {
+
+        svg {
+
+        }
+
+        .text {
+          color: $vio-color;
+        }
+      }
+    }
+  }
+
+  .about {
+    padding: 60px 0;
+
+    h2 {
+      color: $tvio-color;
+      font-size: 36px;
+    }
+
+    &_img {
+      margin-bottom: 30px;
+    }
+
+    &_text {
+
+      img {
+        margin-top: 30px;
+      }
+    }
+    
+    &_doctor {
+      
+      h2 {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+    }
+
+    &_button {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .more {
+        margin-bottom: 30px;
+        color: $vio-color;
+      }
+
+      .question {
+        color: #fff;
+        background: $vio-color;
+      }
+    }
+  }
+
+  .equipment {
+    padding: 60px 0;
+    background: $def-color;
+
+    h2 {
+      color: #fff;
+    }
+
+    &_text {
+      margin-bottom: 30px;
+      color: #fff;
+
+      &:last-child {
+        margin-bottom: 0;
+
+        img {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .sign {
+    padding: 60px 0;
+
+    .form {
+
+      form.def-form{
+
+        input {
+          width: 100%;
+          border: 1px solid $def-color;
+          height: 55px;
+          margin-bottom: 40px;
+          font-size: 22px;
+          padding-left: 33px;
+
+          &:last-child {
+            border: 1px solid $vio-color;
+            color: #fff;
+            background: $vio-color;
+          }
+        }
+
+        input.def-button {
+          padding-left: 0;
+        }
+      }
+
+      .yes {
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        input.checkbox {
+          width: 120px;
+          margin-right: 15px;
+          display: none;
+        }
+
+        span {
+          width: 75px;
+          height: 25px;
+          margin: auto 15px auto 0px;
+          border: 2px solid $vio-color;
+        }
+      }
+    }
+  }
+}

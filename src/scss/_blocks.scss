@@ -1,0 +1,28 @@
+h2.def_title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+img.shadow {
+  box-shadow: 4px 4px 0px #c7dec8;
+}
+
+.def_text {
+  font-size: 22px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.def-button {
+  cursor: pointer;
+  border: 2px solid $vio-color;
+  background: none;
+  width: 300px;
+  height: 62px;
+  border-radius: 31px;
+  font-size: 24px;
+  color: $vio-color;
+  font-family: Gilroy-SemiBold;
+}
