@@ -2,9 +2,9 @@
   background-image: url("./files/imgs/glavnaya/banner1.jpg");
   min-height: 450px;
   background-position-x: center;
+  background-size: cover;
 
   &_menu{
-   // height: 72px;
     padding: 15px 0;
     background: #ffffff;
    // opacity: 0.8;
@@ -15,7 +15,7 @@
   &_burger {
 
     span {
-      width: 40px;
+      width: 45px;
       height: 3px;
       background: $vio-color;
       position: absolute;
@@ -30,7 +30,7 @@
         height: 100%;
         background-color: $vio-color;
         display: block;
-        top: -10px;
+        top: -12px;
         left: 0;
         border-radius: 2px;
         transition-property: top;
@@ -45,12 +45,31 @@
         height: 100%;
         background-color: $vio-color;
         display: block;
-        top: 10px;
+        top: 12px;
         left: 0;
         border-radius: 2px;
         transition-property: top;
         transition-delay: .3s;
         transition-duration: .3s;
+      }
+    }
+  }
+
+  .active {
+
+    span {
+      background-color: transparent;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0);
+
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+        transition-delay: .1s;
+      }
+      &:after {
+        top: 0;
+        transform: rotate(-45deg);
+        transition-delay: .1s;
       }
     }
   }
@@ -62,16 +81,21 @@
     font-family: Gilroy-Bold;
 
     span {
-      font-size: 25px;
+      font-size: 24px;
       font-family: Gilroy-Bold;
     }
   }
   
   &_button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px auto 30px;
+    display: none;
+    width: 100%;
+
+    .cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px auto 30px;
+    }
     
     .stock {
       width: 260px;
@@ -91,6 +115,7 @@
     text-align: center;
     width: 100%;
     margin-bottom: 15px;
+    display: none;
 
     nav.menu {
 
@@ -106,7 +131,7 @@
           }
         }
 
-        li:nth-child(2) {
+        li.none {
           display: none;
         }
       }
@@ -117,13 +142,22 @@
     font-size: 20px;
     text-align: center;
     width: 100%;
+    line-height: 1.7;
+    display: none;
+    margin-bottom: 15px;
 
     a {
       font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Gilroy-SemiBold;
 
       svg {
-        width: 10px;
-        height: 10px;
+        width: 30px;
+        height: 30px;
+        fill: $def-color;
+        margin-right: 8px;
       }
     }
   }
@@ -133,23 +167,34 @@
 @media screen
 and (min-width: 768px){
   .header {
+    min-height: 745px;
 
     &_menu{
+      padding-bottom: 0;
     }
 
     &_burger {
-
+      order: 1;
     }
 
     &_name {
+      order: 2;
+      font-size: 30px;
 
+      span {
+        font-size: 30px;
+      }
     }
 
     &_button {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      order: 4;
+      display: block;
+
+      .cont {
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px auto 15px;
+      }
 
       .stock {
         margin-bottom: 0;
@@ -162,6 +207,14 @@ and (min-width: 768px){
     }
 
     &_nav {
+      order: 5;
+      width: 750px;
+      position: absolute;
+      background: rgb(255, 255, 255);
+      left: 50%;
+      top: 173px;
+      transform: translateX(-50%);
+      padding: 30px 0px;
 
       nav.menu {
 
@@ -181,9 +234,11 @@ and (min-width: 768px){
     }
 
     &_address {
+      order: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
       width: auto;
-      position: absolute;
-      right: 35px;
 
       a {
       }
@@ -194,4 +249,101 @@ and (min-width: 768px){
 
 @media screen
 and (min-width: 1200px){
+  .header {
+
+    &_menu{
+      padding-bottom: 0;
+    }
+
+    &_burger {
+      display: none;
+    }
+
+    &_name {
+      font-size: 30px;
+      order: 1;
+
+      span {
+        font-size: 30px;
+      }
+    }
+
+    &_button {
+      display: block;
+      order: 3;
+
+      .cont {
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px auto 15px;
+      }
+
+      .stock {
+        margin-bottom: 0;
+        margin-right: 30px;
+      }
+
+      .call {
+
+      }
+    }
+
+    &_nav {
+      display: block;
+      order: 4;
+      margin-top: 15px;
+      position: relative;
+      transform: none;
+      padding: 0 15px;
+      top: 0;
+      left: 0;
+
+      nav.menu {
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+
+            a {
+
+            }
+          }
+
+          li.none {
+            display: block;
+          }
+        }
+
+        ul.none {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          background: #fff;
+          top: 35px;
+          padding: 30px 80px 30px 40px;
+          left: 147px;
+          align-items: flex-start;
+          display: none;
+
+          li {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    &_address {
+      width: auto;
+      position: relative;
+      order: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      a {
+      }
+    }
+  }
 }

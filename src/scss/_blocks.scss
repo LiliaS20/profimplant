@@ -13,6 +13,7 @@ img.shadow {
   font-size: 22px;
   line-height: 1.7;
   margin-bottom: 30px;
+  color: $black-color;
 }
 
 .def-button {
@@ -25,4 +26,14 @@ img.shadow {
   font-size: 24px;
   color: $vio-color;
   font-family: Gilroy-SemiBold;
+}
+
+@media screen
+and (min-width: 768px){
+
+  h2.def_title {
+    text-align: right;
+    font-size: 40px;
+    margin-top: 40px;
+  }
 }

@@ -1,4 +1,242 @@
 @media screen
 and (min-width: 768px){
+  .main {
 
+    .servises {
+      padding: 120px 0;
+
+      .center {
+        display: block;
+
+        &:last-child {
+          //margin-bottom: 0;
+        }
+      }
+
+      &_card {
+        width: auto;
+
+
+
+        .block {
+
+          svg {
+
+            &:hover {
+            }
+          }
+
+          .text {
+
+          }
+        }
+      }
+
+      &_photo {
+        display: block;
+
+        img {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .about {
+      padding: 120px 0;
+
+      h2 {
+        font-size: 40px;
+        text-align: right;
+        margin-top: 30px;
+      }
+
+      &_text {
+        position: relative;
+        top: -240px;
+        margin-bottom: -75px;
+
+        p {
+          border: 2px solid $def-color;
+          padding: 60px 30px;
+        }
+      }
+
+      &_doctor {
+        border: 2px solid $def-color;
+        padding: 60px 30px;
+        margin-bottom: 80px;
+
+        p.def_text {
+          margin-bottom: 0;
+        }
+
+        h2 {
+          font-size: 40px;
+          text-align: left;
+          margin-top: 0;
+        }
+      }
+
+      &_button {
+
+        .more {
+          margin-bottom: 0;
+          margin-right: 30px;
+        }
+      }
+    }
+
+    .equipment {
+      padding: 120px 0;
+
+      .pos {
+        position: relative;
+        top: -70px;
+      }
+
+      &_text {
+        border: 2px solid;
+        padding: 60px 30px;
+      }
+    }
+
+    .sign {
+      padding: 75px 0 120px;
+
+      h2.def_title {
+        text-align: left;
+        margin-bottom: 45px;
+      }
+
+      .form {
+
+        form.def-form{
+
+          input {
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          input.def-button {
+            padding-left: 0;
+          }
+        }
+
+        .yes {
+          position: relative;
+          margin-bottom: 30px;
+          margin-left: 55px;
+
+          input.checkbox {
+            display: none;
+          }
+
+          p {
+            font-size: 20px;
+            line-height: 1.5;
+
+
+            &:after {
+              cursor: pointer;
+              display: block;
+              content: "";
+              width: 25px;
+              height: 25px;
+              border: 2px solid $vio-color;
+              position: absolute;
+              left: -40px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+
+      &_photo {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+@media screen
+and (min-width: 992px){
+  .main {
+
+    .about {
+
+      &_text {
+        top: -340px;
+        margin-bottom: -230px;
+      }
+    }
+
+    .equipment {
+
+      .pos {
+        top: 5px;
+      }
+
+      .equip {
+        position: relative;
+        top: -205px;
+      }
+    }
+  }
+}
+
+@media screen
+and (min-width: 1200px){
+  .main {
+
+    .about {
+
+      &_text {
+        top: -420px;
+        margin-bottom: -320px;
+
+        p {
+          padding: 60px 50px;
+        }
+      }
+
+      &_doctor {
+        padding: 60px 50px;
+
+        p.def_text {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .equipment {
+
+      &_text {
+        padding: 60px;
+      }
+
+      .pos {
+        top: 5px;
+      }
+
+      .equip {
+        position: relative;
+        top: -350px;
+      }
+    }
+
+    .sign {
+      padding: 120px 0;
+
+      &_photo {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
 }
