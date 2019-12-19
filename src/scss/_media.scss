@@ -3,7 +3,8 @@ and (min-width: 768px){
   .main {
 
     .servises {
-      padding: 120px 0;
+      padding: 120px 0 90px;
+      position: relative;
 
       .center {
         display: block;
@@ -14,9 +15,7 @@ and (min-width: 768px){
       }
 
       &_card {
-        width: auto;
-
-
+        width: 330px;
 
         .block {
 
@@ -39,16 +38,51 @@ and (min-width: 768px){
           margin-bottom: 30px;
         }
       }
+
+      .order-1 {
+        order: 1;
+      }
+
+      .order-2 {
+        order: 3;
+        position: relative;
+        top: -170px;
+      }
+
+      .order-3 {
+        order: 4;
+      }
+
+      .order-4 {
+        order: 2;
+      }
+
+      .order-5 {
+        order: 5;
+        position: absolute;
+        top: 520px;
+        width: 360px;
+      }
+
+      .order-6 {
+        order: 6;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .order-7 {
+        order: 7;
+        position: relative;
+        top: -38px;
+      }
+
+      .order-8 {
+        order: 8;
+      }
     }
 
     .about {
       padding: 120px 0;
-
-      h2 {
-        font-size: 40px;
-        text-align: right;
-        margin-top: 30px;
-      }
 
       &_text {
         position: relative;
@@ -94,6 +128,13 @@ and (min-width: 768px){
         top: -70px;
       }
 
+      .equip {
+
+        .def_text {
+          margin-bottom: 0;
+        }
+      }
+
       &_text {
         border: 2px solid;
         padding: 60px 30px;
@@ -125,30 +166,20 @@ and (min-width: 768px){
         }
 
         .yes {
-          position: relative;
-          margin-bottom: 30px;
-          margin-left: 55px;
 
           input.checkbox {
             display: none;
           }
 
           p {
-            font-size: 20px;
-            line-height: 1.5;
 
 
             &:after {
-              cursor: pointer;
-              display: block;
-              content: "";
-              width: 25px;
-              height: 25px;
-              border: 2px solid $vio-color;
-              position: absolute;
-              left: -40px;
-              top: 50%;
-              transform: translateY(-50%);
+
+            }
+
+            &:before {
+              top: 44px;
             }
           }
         }
@@ -168,6 +199,41 @@ and (min-width: 768px){
 and (min-width: 992px){
   .main {
 
+    .servises {
+
+      .wrapper {
+        position: relative;
+      }
+
+      .order-2 {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .order-3 {
+
+        img {
+          width: 330px;
+        }
+      }
+
+      .order-5 {
+        top: 410px;
+        left: 120px;
+      }
+
+      .order-6 {
+        position: relative;
+        left: -120px;
+      }
+
+      .order-7 {
+        display: flex;
+        justify-content: flex-end;
+        top: -30px;
+      }
+    }
+
     .about {
 
       &_text {
@@ -177,22 +243,145 @@ and (min-width: 992px){
     }
 
     .equipment {
+      padding: 120px 0 200px;
+
+      .wrapper {
+        position: relative;
+      }
 
       .pos {
-        top: 5px;
+        top: 0;
       }
 
       .equip {
-        position: relative;
-        top: -205px;
+        position: absolute;
+        right: 0;
+        top: 490px;
+      }
+
+      img {
+        margin-bottom: 40px;
+      }
+    }
+
+    .sign {
+
+      .form {
+
+        form.def-form{
+
+          input {
+
+          }
+
+          input.def-button {
+
+          }
+        }
+
+        .yes {
+
+          input.checkbox {
+
+          }
+
+          p {
+
+
+            &:after {
+
+            }
+
+            &:before {
+              top: 30px;
+            }
+          }
+        }
+      }
+
+      &_photo {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
       }
     }
   }
 }
 
+
 @media screen
 and (min-width: 1200px){
   .main {
+
+    .servises {
+      padding-bottom: 150px;
+
+      &_card {
+        width: 360px;
+      }
+
+      .order-1 {
+        order: 1;
+        position: static;
+      }
+
+      .order-2 {
+        order: 4;
+        position: absolute;
+        top: 130px;
+      }
+
+      .order-3 {
+        order: 7;
+        position: relative;
+        top: -48px;
+
+        img {
+          width: auto;
+        }
+      }
+
+      .order-4 {
+        order: 2;
+        position: static;
+
+        .servises_card {
+          width: 350px;
+        }
+      }
+
+      .order-5 {
+        order: 3;
+        position: static;
+      }
+
+      .order-6 {
+        order: 5;
+        position: absolute;
+        left: 0;
+        top: 285px;
+
+        .servises_card {
+          width: 350px;
+        }
+      }
+
+      .order-7 {
+        order: 8;
+        top: -20px;
+      }
+
+      .order-8 {
+        order: 7;
+        display: block;
+        position: relative;
+        top: 105px;
+
+        .servises_card {
+          width: 350px;
+        }
+      }
+    }
 
     .about {
 
@@ -215,6 +404,8 @@ and (min-width: 1200px){
     }
 
     .equipment {
+      position: relative;
+      padding: 120px 0;
 
       &_text {
         padding: 60px;
@@ -225,8 +416,7 @@ and (min-width: 1200px){
       }
 
       .equip {
-        position: relative;
-        top: -350px;
+        top: 460px;
       }
     }
 

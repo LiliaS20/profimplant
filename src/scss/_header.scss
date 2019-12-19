@@ -10,6 +10,10 @@
    // opacity: 0.8;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
   }
 
   &_burger {
@@ -225,10 +229,6 @@ and (min-width: 768px){
             a {
             }
           }
-
-          li:nth-child(2) {
-
-          }
         }
       }
     }
@@ -325,7 +325,7 @@ and (min-width: 1200px){
           padding: 30px 80px 30px 40px;
           left: 147px;
           align-items: flex-start;
-          display: none;
+          //display: none;
 
           li {
             text-align: left;

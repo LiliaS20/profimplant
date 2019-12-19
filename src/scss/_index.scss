@@ -77,7 +77,7 @@
 
     h2 {
       color: $tvio-color;
-      font-size: 36px;
+     // font-size: 36px;
     }
 
     &_img {
@@ -176,32 +176,53 @@
         }
       }
 
-      .yes {
+      label{
         position: relative;
         margin-bottom: 30px;
         margin-left: 55px;
+        cursor: pointer;
 
-        input.checkbox {
+
+        &::before{
+          display: block;
+          content: "";
+          width: 25px;
+          height: 25px;
+          border: 2px solid $vio-color;
+          position: absolute;
+          left: -40px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &::after{
+          display: block;
+          content: '';
+          width: 25px;
+          height: 25px;
+          background-image: url('./files/imgs/glavnaya/yes.svg');
+          background-size: cover;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -40px;
+        }
+
+        input{
           display: none;
         }
 
-        p {
+        &.not-active{
+
+          &::after{
+            display: none;
+          }
+        }
+
+        span {
           font-size: 20px;
           line-height: 1.5;
-
-
-          &:after {
-            cursor: pointer;
-            display: block;
-            content: "";
-            width: 25px;
-            height: 25px;
-            border: 2px solid $vio-color;
-            position: absolute;
-            left: -40px;
-            top: 50%;
-            transform: translateY(-50%);
-          }
+          color: $black-color;
         }
       }
     }
