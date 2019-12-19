@@ -34,11 +34,6 @@
           max-width: 90px;
           max-height: 90px;
           margin: 0 auto 45px;
-          fill: $def-color;
-
-          &:hover {
-            fill: red;
-          }
         }
 
         .text {
@@ -59,6 +54,9 @@
 
         svg {
 
+          path {
+            fill: $vio-color;
+          }
         }
 
         .text {
@@ -70,6 +68,28 @@
     &_photo {
       display: none;
     }
+
+    .order-8 {
+
+      .servises_card {
+        border: 2px solid $vio-color;
+
+        .block {
+
+          svg {
+
+            path {
+              fill: $vio-color;
+            }
+          }
+
+          .text {
+            color: $vio-color;
+          }
+        }
+      }
+    }
+
   }
 
   .about {
@@ -113,12 +133,16 @@
 
       .more {
         margin-bottom: 30px;
+        background: #ffffff;
         color: $vio-color;
+
+        &:hover {
+          color: $def-color;
+        }
       }
 
       .question {
-        color: #fff;
-        background: $vio-color;
+
       }
     }
   }
@@ -164,9 +188,7 @@
           padding-left: 33px;
 
           &:last-child {
-            border: 1px solid $vio-color;
-            color: #fff;
-            background: $vio-color;
+            border: none;
             width: 300px;
           }
         }

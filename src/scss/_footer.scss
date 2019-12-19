@@ -68,6 +68,99 @@
       }
     }
   }
+
+  #form {
+   // display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    .form_black {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    .form {
+      position: relative;
+      left: 50%;
+      top: 17%;
+     // transform: translate(-50%, -50%);
+      transform: translateX(-50%);
+      background: #ffffff;
+     // padding: 30px 10px 0;
+      width: 300px;
+      height: 470px;
+
+      h2.def_title {
+        margin-bottom: 30px;
+        font-size: 36px;
+      }
+
+      img.remove {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        cursor: pointer;
+      }
+
+      form.def-form{
+
+        input {
+          margin-bottom: 20px;
+
+          &:last-child {
+            width: 280px;
+          }
+        }
+
+        input.def-button {
+          padding-left: 0;
+        }
+      }
+
+      label{
+        margin-bottom: 20px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+
+      &_call {
+        padding: 30px 10px 0;
+      }
+
+      &_thank {
+        background: $def-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        padding: 60px 30px;
+        display: none;
+        
+        h2 {
+          color: #ffffff;
+          font-size: 36px;
+        }
+        
+        p {
+          color: #ffffff;
+        }
+       // display: none;
+      }
+    }
+  }
 }
 
 @media screen
@@ -97,6 +190,88 @@ and (min-width: 768px){
 
         ul {
           text-align: left;
+        }
+      }
+    }
+
+    #form {
+
+      .form__black {
+      }
+
+      .form {
+        width: 750px;
+        height: 570px;
+        padding: 0;
+
+        &.thank {
+
+        }
+
+        h2.def_title {
+          margin-bottom: 30px;
+          font-size: 40px;
+          margin-top: 0;
+        }
+
+        img.remove {
+          top: 40px;
+          right: 40px;
+        }
+
+        form.def-form{
+
+          input {
+            margin-bottom: 40px;
+
+            &:last-child {
+              width: 280px;
+            }
+          }
+
+          input.def-button {
+            padding-left: 0;
+          }
+        }
+
+        label{
+          margin-bottom: 65px;
+
+          span {
+            font-size: 20px;
+          }
+        }
+
+        &_call {
+          padding: 60px 140px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+
+        }
+
+        &_thank {
+          padding: 60px 140px;
+
+          h2 {
+            color: #ffffff;
+            font-size: 40px;
+          }
+
+          p {
+            font-size: 20px;
+
+            br {
+              display: none;
+            }
+          }
+
+          img {
+            width: 450px;
+          }
+          // display: none;
         }
       }
     }
