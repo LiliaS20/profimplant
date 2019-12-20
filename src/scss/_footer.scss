@@ -70,8 +70,8 @@
   }
 
   #form {
-   // display: none;
-    z-index: 1;
+    display: none;
+    z-index: 2;
     position: fixed;
     left: 0;
     right: 0;
@@ -88,14 +88,18 @@
       cursor: pointer;
     }
 
+    .wrapper {
+      justify-content: center;
+    }
+
     .form {
       position: relative;
       left: 50%;
-      top: 17%;
-     // transform: translate(-50%, -50%);
+      top: 35%;
+      // transform: translate(-50%, -50%);
       transform: translateX(-50%);
       background: #ffffff;
-     // padding: 30px 10px 0;
+      // padding: 30px 10px 0;
       width: 300px;
       height: 470px;
 
@@ -148,16 +152,16 @@
         justify-content: space-between;
         padding: 60px 30px;
         display: none;
-        
+
         h2 {
           color: #ffffff;
           font-size: 36px;
         }
-        
+
         p {
           color: #ffffff;
         }
-       // display: none;
+        // display: none;
       }
     }
   }

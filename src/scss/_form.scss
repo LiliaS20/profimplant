@@ -1,0 +1,212 @@
+.main {
+  .sign {
+    padding: 60px 0;
+
+    h2 {
+      padding: 0 10px;
+    }
+
+    .form {
+
+      form.def-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+          width: 100%;
+          border: 2px solid $def-color;
+          height: 55px;
+          margin-bottom: 40px;
+          font-size: 22px;
+          padding-left: 33px;
+
+          &:last-child {
+            border: none;
+            width: 300px;
+          }
+        }
+
+        input.def-button {
+          padding-left: 0;
+        }
+      }
+
+      label{
+        position: relative;
+        margin-bottom: 30px;
+        margin-left: 55px;
+        cursor: pointer;
+
+
+        &::before{
+          display: block;
+          content: "";
+          width: 25px;
+          height: 25px;
+          border: 2px solid $vio-color;
+          position: absolute;
+          left: -40px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &::after{
+          display: block;
+          content: '';
+          width: 25px;
+          height: 25px;
+          background-image: url('./files/imgs/glavnaya/yes.svg');
+          background-size: cover;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -40px;
+        }
+
+        input{
+          display: none;
+        }
+
+        &.not-active{
+
+          &::after{
+            display: none;
+          }
+        }
+
+        span {
+          font-size: 20px;
+          line-height: 1.5;
+          color: $black-color;
+        }
+      }
+    }
+
+    &_photo {
+      display: none;
+    }
+  }
+}
+
+@media screen
+and (min-width: 768px){
+  .main {
+
+    .sign {
+      padding: 75px 0 120px;
+
+      h2.def_title {
+        text-align: left;
+        margin-bottom: 45px;
+      }
+
+      .form {
+
+        form.def-form{
+
+          input {
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          input.def-button {
+            padding-left: 0;
+          }
+        }
+
+        .yes {
+
+          input.checkbox {
+            display: none;
+          }
+
+          p {
+
+
+            &:after {
+
+            }
+
+            &:before {
+              top: 44px;
+            }
+          }
+        }
+      }
+
+      &_photo {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+@media screen
+and (min-width: 992px){
+  .main {
+
+    .sign {
+
+      .form {
+
+        form.def-form{
+
+          input {
+
+          }
+
+          input.def-button {
+
+          }
+        }
+
+        .yes {
+
+          input.checkbox {
+
+          }
+
+          p {
+
+
+            &:after {
+
+            }
+
+            &:before {
+              top: 30px;
+            }
+          }
+        }
+      }
+
+      &_photo {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+@media screen
+and (min-width: 1200px){
+  .main {
+
+    .sign {
+      padding: 120px 0;
+
+      &_photo {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

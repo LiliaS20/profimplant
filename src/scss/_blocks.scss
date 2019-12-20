@@ -3,6 +3,7 @@ h2.def_title {
   text-align: center;
   font-size: 35px;
   line-height: 1.1;
+  color: $tvio-color;
 }
 
 img.shadow {
@@ -26,6 +27,7 @@ img.shadow {
   font-size: 24px;
   color: #ffffff;
   font-family: Gilroy-SemiBold;
+  outline: none;
 
   &:hover {
     border: 2px solid $def-color;
@@ -110,6 +112,79 @@ img.shadow {
   }
 }
 
+.doctor {
+  padding: 90px 0;
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+    &:hover {
+
+      img {
+        box-shadow: 4px 4px 0px darkgreen;
+      }
+    }
+
+    &_img {
+      margin-bottom: 25px;
+
+      img {
+        width: 220px;
+      }
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-family: Gilroy-SemiBold;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 22px;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+
+  button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ccc;
+    margin: 0 3px;
+
+    &.active {
+      background-color: $vio-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+h3 {
+  color: $vio-color;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: Gilroy-Medium;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+
 
 
 
@@ -128,5 +203,24 @@ and (min-width: 1200px){
 
   h2.def_title {
     font-size: 48px;
+  }
+
+  .doctor {
+
+    &_card {
+
+      &_img {
+
+        img {
+          width: 360px;
+        }
+      }
+
+      h2 {
+      }
+
+      p {
+      }
+    }
   }
 }

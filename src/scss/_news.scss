@@ -1,0 +1,53 @@
+.main {
+
+  .contact {
+
+    .wrapper {
+      flex-direction: column;
+
+      span {
+        color: $black-color;
+        font-size: 27px;
+        line-height: 1.7;
+        font-weight: bold;
+      }
+
+      a {
+        color: $black-color;
+        font-size: 27px;
+        line-height: 1.7;
+      }
+
+      .def_text {
+        font-size: 27px;
+      }
+    }
+  }
+
+}
+
+@media screen
+and (min-width: 768px){
+  .main {
+
+
+  }
+
+}
+
+@media screen
+and (min-width: 992px){
+  .main {
+
+
+  }
+}
+
+
+@media screen
+and (min-width: 1200px){
+  .main {
+
+
+  }
+}

@@ -140,57 +140,6 @@ and (min-width: 768px){
         padding: 60px 30px;
       }
     }
-
-    .sign {
-      padding: 75px 0 120px;
-
-      h2.def_title {
-        text-align: left;
-        margin-bottom: 45px;
-      }
-
-      .form {
-
-        form.def-form{
-
-          input {
-
-            &:last-child {
-              margin-bottom: 0;
-            }
-          }
-
-          input.def-button {
-            padding-left: 0;
-          }
-        }
-
-        .yes {
-
-          input.checkbox {
-            display: none;
-          }
-
-          p {
-
-
-            &:after {
-
-            }
-
-            &:before {
-              top: 44px;
-            }
-          }
-        }
-      }
-
-      &_photo {
-        display: flex;
-        justify-content: flex-end;
-        height: 100%;
-      }
-    }
   }
 
 }
@@ -264,47 +213,6 @@ and (min-width: 992px){
       }
     }
 
-    .sign {
-
-      .form {
-
-        form.def-form{
-
-          input {
-
-          }
-
-          input.def-button {
-
-          }
-        }
-
-        .yes {
-
-          input.checkbox {
-
-          }
-
-          p {
-
-
-            &:after {
-
-            }
-
-            &:before {
-              top: 30px;
-            }
-          }
-        }
-      }
-
-      &_photo {
-        display: flex;
-        justify-content: flex-end;
-        height: 100%;
-      }
-    }
   }
 }
 
@@ -420,13 +328,5 @@ and (min-width: 1200px){
       }
     }
 
-    .sign {
-      padding: 120px 0;
-
-      &_photo {
-        display: flex;
-        justify-content: flex-end;
-      }
-    }
   }
 }
