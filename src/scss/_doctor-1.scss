@@ -1,0 +1,98 @@
+.main {
+
+  .doctor-one {
+    padding: 60px 0;
+
+    h2.def_title {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin-bottom: 35px;
+      }
+    }
+
+    .table {
+      overflow-x: scroll;
+      margin-bottom: 40px;
+
+      table {
+        text-align: center;
+        border-spacing: 1px;
+        background: $vio-color;
+
+        tbody {
+
+
+
+          th {
+            border-style: solid;
+            border-width: 0;
+            border-color: white;
+            background: $vio-color;
+            color: #ffffff;
+            font-weight: 100;
+            padding: 5px 12px;
+            border-spacing: 1px;
+          }
+
+          tr {
+
+            td {
+              background: #ffffff;
+              padding: 8px 12px;
+            }
+          }
+
+
+        }
+      }
+    }
+
+
+  }
+
+}
+
+
+@media screen
+and (min-width: 768px){
+  .main {
+
+    .doctor-one {
+
+      .table {
+        overflow-x: hidden;
+        margin-bottom: 55px;
+      }
+    }
+  }
+}
+
+@media screen
+and (min-width: 1200px){
+  .main {
+
+    .doctor-one {
+      padding: 60px 0 120px;
+
+      p.def_text {
+
+        &:last-child {
+          margin-bottom: 380px;
+        }
+      }
+
+      .table {
+        position: absolute;
+        right: 35px;
+        bottom: 0;
+      }
+    }
+  }
+}

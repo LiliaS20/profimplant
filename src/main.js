@@ -91,6 +91,7 @@ jQuery(function($) {
 
     $('.form_black, img.remove').on('click', function () {
       $('#form').fadeOut(300);
+      $('.popup-doc').fadeOut(300);
     });
 
     $('button.call').on('click', function () {
@@ -160,6 +161,18 @@ jQuery(function($) {
       }
     });
 
+
+    $('.document img').on('click', function () {
+      console.log("netr");
+
+      var popupSrc = $(this).attr('src');
+
+      $('.popup-doc').fadeToggle();
+      $('.popup-doc img').attr('src', popupSrc);
+
+    });
+
+    $("#phone, .phone").mask("+7(999)999-99-99");
 
   });
 

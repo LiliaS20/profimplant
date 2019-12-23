@@ -165,6 +165,37 @@
       }
     }
   }
+
+  .popup-doc {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    .form_black {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    &-img {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 140px;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+
+  }
 }
 
 @media screen
@@ -278,6 +309,22 @@ and (min-width: 768px){
           // display: none;
         }
       }
+    }
+
+    .popup-doc {
+
+      .form_black {
+
+      }
+
+      &-img {
+        width: auto;
+
+        img {
+          width: 500px;
+        }
+      }
+
     }
   }
 }

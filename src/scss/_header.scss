@@ -321,6 +321,11 @@ and (min-width: 1200px){
 
           li.drop-down > a {
             display: block;
+            pointer-events: none;
+          }
+
+          li.drop-down {
+            cursor: pointer;
           }
         }
 

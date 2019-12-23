@@ -1,0 +1,30 @@
+.main {
+
+  .contact {
+    padding: 50px 0;
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      span {
+        color: $black-color;
+        font-size: 27px;
+        line-height: 1.7;
+        font-weight: bold;
+      }
+
+      a {
+        color: $black-color;
+        font-size: 27px;
+        line-height: 1.7;
+      }
+
+      .def_text {
+        font-size: 27px;
+      }
+    }
+  }
+
+}
