@@ -33,6 +33,23 @@
           svg {
             height: 60px;
             width: 60px;
+            fill: $vio-color
+          }
+        }
+
+        &:hover {
+          border: 2px solid $def-color;
+
+          h3 {
+            color: $def-color;
+          }
+
+          .block {
+
+            svg {
+              fill: $def-color;
+
+            }
           }
         }
       }
@@ -83,11 +100,32 @@ and (min-width: 768px){
 @media screen
 and (min-width: 1200px){
   .main {
+
+    .servises-page {
+
+      .wrapper {
+
+        .title-card {
+          padding: 0 50px;
+
+          h3 {
+
+          }
+
+          .block {
+            margin-right: 70px;
+          }
+        }
+      }
+    }
+
+
     .servises-photo {
       display: block;
 
       img {
         width: 340px;
+        height: auto;
       }
 
       h2.def_title {

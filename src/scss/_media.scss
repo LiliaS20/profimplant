@@ -237,6 +237,7 @@ and (min-width: 1200px){
         order: 4;
         position: absolute;
         top: 130px;
+        z-index: 1;
       }
 
       .order-3 {
@@ -277,6 +278,14 @@ and (min-width: 1200px){
       .order-7 {
         order: 8;
         top: -20px;
+
+        a {
+          width: 350px;
+
+          .servises_card {
+            width: 350px;
+          }
+        }
       }
 
       .order-8 {

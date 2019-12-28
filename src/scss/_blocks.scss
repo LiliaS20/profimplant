@@ -134,6 +134,7 @@ img.shadow {
 
       img {
         width: 220px;
+        height: 272px;
       }
     }
 
@@ -184,6 +185,32 @@ h3 {
   font-weight: 100;
 }
 
+.crumbs {
+  margin-top: 60px;
+
+  .breadcrumb {
+    font-size: 21px;
+
+    span {
+      font-size: 21px;
+      text-transform: uppercase;
+
+      a {
+
+        span {
+          color: $black-color;
+
+          &:hover {
+            color: $def-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 
 
 
@@ -213,6 +240,7 @@ and (min-width: 1200px){
 
         img {
           width: 360px;
+          height: 445px;
         }
       }
 

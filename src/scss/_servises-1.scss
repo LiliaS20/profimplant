@@ -30,14 +30,16 @@
         font-family: Gilroy-Medium;
         line-height: 1.5;
         font-weight: 100;
+        white-space: normal;
       }
 
       .block {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
 
         svg {
           height: 90px;
           width: 90px;
+          fill: $vio-color;
         }
       }
     }
@@ -45,11 +47,18 @@
     .description {
       margin-bottom: 35px;
 
+      h3 {
+        white-space: normal;
+        padding-left: 20px;
+      }
+
       ul {
 
         li {
           font-size: 22px;
           line-height: 2;
+          white-space: normal;
+          padding-left: 20px;
 
           &:before {
             color: $black-color;
@@ -60,8 +69,9 @@
       }
     }
   }
-
 }
+
+
 
 @media screen
 and (min-width: 768px) {

@@ -6,6 +6,8 @@ jQuery(function($) {
 
     console.log('YEP');
 
+    // MENU
+
     var wWindow = $(window).width();
 
     $(function() {
@@ -31,7 +33,7 @@ jQuery(function($) {
 
         if (scrolled1 > 10) {
 
-          $('.header_nav nav.menu ul.none').addClass('scroll')
+          $('.header_nav nav.menu-item-container ul.sub-menu').addClass('scroll')
 
         }
       });
@@ -55,6 +57,8 @@ jQuery(function($) {
       $(window).scroll(function () {
 
         scrolled1 = $(window).scrollTop();
+
+
 
         if (scrolled1 > 10) {
 
@@ -82,6 +86,11 @@ jQuery(function($) {
       });
     }
 
+    // MENU
+
+
+    // FORM
+
     $('input.def-button').on('click', function () {
 
       $('.form_call').fadeOut('300', function() {
@@ -99,8 +108,6 @@ jQuery(function($) {
     });
 
 
-
-
     $('.yes input').on('click', function () {
 
       console.log('YEP');
@@ -109,7 +116,7 @@ jQuery(function($) {
     });
 
 
-
+  // FORM
 
 
     $(".slider-doctor-card").owlCarousel({
@@ -162,6 +169,8 @@ jQuery(function($) {
     });
 
 
+    // POPUP PHOTO
+
     $('.document img').on('click', function () {
       console.log("netr");
 
@@ -172,7 +181,17 @@ jQuery(function($) {
 
     });
 
+    // POPUP PHOTO
+
+
+
     $("#phone, .phone").mask("+7(999)999-99-99");
+
+
+    $(window).on('preloader', function () {
+      $('#preloader').delay(2500).fadeOut('slow');
+    });
+
 
   });
 
