@@ -107,11 +107,15 @@
 
     &_text {
 
-      p {
-        font-size: 22px;
-        line-height: 1.7;
-        margin-bottom: 30px;
-        color: $black-color;
+      .text {
+
+        p {
+          font-size: 22px;
+          line-height: 1.7;
+          margin-bottom: 5px;
+          color: $black-color;
+          text-indent: 40px;
+        }
       }
 
       img {
@@ -163,6 +167,18 @@
     &_text {
      // margin-bottom: 30px;
       color: #fff;
+
+
+      p {
+        font-size: 22px;
+        line-height: 1.7;
+        color: #fff;
+        text-indent: 40px;
+      }
+
+      p.title {
+        font-weight: 700;
+      }
     }
   }
 

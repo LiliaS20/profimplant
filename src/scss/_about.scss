@@ -44,8 +44,13 @@
     .doctor_card {
       margin-bottom: 0;
 
-      img {
-        height: auto;
+      .doc {
+
+        height: 300px;
+
+        img {
+          height: auto;
+        }
       }
     }
   }
@@ -143,6 +148,26 @@ and (min-width: 992px){
 
       h2.def_title {
         padding-left: 70px;
+      }
+    }
+  }
+}
+
+
+@media screen
+and (min-width: 1200px){
+
+  .main {
+
+    .document {
+
+      .doctor_card {
+
+        .doc {
+
+          height: 500px;
+
+        }
       }
     }
   }

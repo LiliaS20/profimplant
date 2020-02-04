@@ -89,15 +89,15 @@ and (min-width: 768px){
         top: -240px;
         margin-bottom: -75px;
 
-        p {
+        .text {
           border: 2px solid $def-color;
-          padding: 60px 30px;
+          padding: 47px 30px;
         }
       }
 
       &_doctor {
         border: 2px solid $def-color;
-        padding: 60px 30px;
+        padding: 60px 30px 47px;
         margin-bottom: 80px;
 
         p.def_text {
@@ -205,7 +205,7 @@ and (min-width: 992px){
       .equip {
         position: absolute;
         right: 0;
-        top: 490px;
+        top: 642px;
       }
 
       img {
@@ -307,7 +307,7 @@ and (min-width: 1200px){
         margin-bottom: -320px;
 
         p {
-          padding: 60px 50px;
+
         }
       }
 
@@ -333,7 +333,7 @@ and (min-width: 1200px){
       }
 
       .equip {
-        top: 460px;
+        top: 608px;
       }
     }
 
